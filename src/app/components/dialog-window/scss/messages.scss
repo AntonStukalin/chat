@@ -1,0 +1,70 @@
+.message__item {
+  display: flex;
+  padding: 18.5px 0 20.3px 22.5px;
+
+  .item__text-block {
+    margin-left: 11px;
+
+    .text-block__user-block {
+      display: flex;
+      align-items: center;
+
+      .item__username {
+        font-size: 12px;
+        line-height: calc(14 / 12 * 100%);
+        font-weight: 700;
+      }
+
+      .item__message-time {
+        font-size: 12px;
+        line-height: calc(14 / 12 * 100%);
+        font-weight: 400;
+        color: #8D8D8D;
+        margin-left: 8px;
+      }
+    }
+
+    .item__message-text {
+      font-size: 13px;
+      line-height: calc(20 / 13 * 100%);
+      font-weight: 400;
+      margin-top: 2.2px;
+      padding-right: 5px;
+    }
+
+    .message-text__link {
+      font-size: 13px;
+      line-height: calc(20 / 13 * 100%);
+      font-weight: 400;
+      color: #3577EF;
+    }
+  }
+}
+
+.delimiter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 22.5px;
+  font-size: 13px;
+  line-height: calc(18 / 13 * 100%);
+  font-weight: 400;
+  color: #8D8D8D;
+
+  &:after {
+    content: "";
+    height: 2px;
+    display: block;
+    background: #000;
+    opacity: 0.16;
+    margin-left: 14.5px;
+  }
+  &:before {
+    content: "";
+    height: 2px;
+    display: block;
+    background: #000;
+    opacity: 0.16;
+    margin-right: 14.5px;
+  }
+}

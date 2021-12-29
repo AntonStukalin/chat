@@ -1,0 +1,124 @@
+.user-info-block {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 21%;
+  margin-left: 79.5%;
+  background-color: gainsboro;
+  height: 100%;
+
+  .user-photo {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .user__info__container {
+    margin: 15.5px 0 3.5px 20.5px;
+
+    .username {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: calc(19 / 16 * 100%);
+      font-weight: 700;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 7.5px;
+        background: #70CC16;
+        margin-left: 5.5px;
+        border-radius: 50%;
+      }
+    }
+
+    .user-position {
+      font-size: 12px;
+      line-height: calc(14 / 12 * 100%);
+      margin-top: 3.5px;
+      margin-bottom: 20px;
+    }
+
+    .user-any-contacts {
+      display: flex;
+      margin-bottom: 18.5px;
+
+      .contact__button {
+        overflow: hidden;
+        border-radius: 50%;
+        background: #E8E8EB;
+        margin-right: 6.5px;
+        cursor: pointer;
+        .contact-button__logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    .user-message {
+      display: flex;
+
+      .message__button {
+        text-align: center;
+        width: 133.5px;
+        height: 25px;
+        background: #3577EF;
+        color: #fff;
+        padding: 4.5px 41px;
+        border-radius: 5px;
+        font-size: 13px;
+        line-height: calc(16 / 13 * 100%);
+        font-weight: 700;
+        margin-right: 2.5px;
+        cursor: pointer;
+      }
+
+      .message__button_more {
+        background: #3577EF;
+        width: 25.5px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .user-contacts {
+
+      .contact__item {
+        margin-top: 14px;
+
+        .contact__item-title {
+          color: #5F6164;
+          font-size: 12px;
+          line-height: calc(14 / 12 * 100%);
+          font-weight: 400;
+        }
+
+        .contact__item-text {
+          font-size: 14px;
+          line-height: calc(17 / 14 * 100%);
+          font-weight: 400;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 11px;
+        }
+      }
+    }
+
+    .roll__button {
+      position: absolute;
+      bottom: 28.5px;
+      right: 23.5px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-5c158": {
+      "hosting": {
+        "untitled": [
+          "chat-5c158"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-5c158"
+  }
+}

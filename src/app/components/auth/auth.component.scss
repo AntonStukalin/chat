@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+input {
+  background-color: #000;
+  color: #B5B5B5;
+  padding: 15px 30px;
+
+}
+
+.container {
+  background-color: #25272A;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .auth-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    background-color: #000;
+    border-radius: 20px 100px;
+    padding: 20px 0;
+
+    .auth-window__title {
+      margin-bottom: 20px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .auth-window__button {
+      outline: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .withGoogle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        color: black;
+      }
+      .withGoogle img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
