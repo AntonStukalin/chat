@@ -28,11 +28,58 @@ input {
     background-color: #000;
     border-radius: 20px 100px;
     padding: 20px 0;
+    border: 5px gray solid;
 
     .auth-window__title {
       margin-bottom: 20px;
       font-size: 32px;
       font-weight: 700;
+    }
+
+    .auth-window__inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        background-color: #fff;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        color: #000;
+      }
+
+      .inputs__enter {
+        color: #000;
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .auth-window__delimiter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+
+      &:after {
+        content: "";
+        display: block;
+        background: #fff;
+        height: 2px;
+        width: 100px;
+        margin-left: 5px;
+      }
+      &:before {
+        content: "";
+        display: block;
+        background: #fff;
+        height: 2px;
+        width: 100px;
+        margin-right: 5px;
+      }
     }
 
     .auth-window__button {
@@ -47,10 +94,13 @@ input {
         justify-content: center;
         padding: 5px 10px;
         color: black;
+        border-radius: 5px;
+        cursor: pointer;
       }
       .withGoogle img {
         width: 30px;
         height: 30px;
+        margin-left: 5px;
       }
     }
   }
