@@ -25,6 +25,7 @@ input {
     align-items: center;
     flex-direction: column;
     width: 33%;
+    height: 400px;
     background-color: #000;
     border-radius: 20px 100px;
     padding: 20px 0;
@@ -55,6 +56,14 @@ input {
         height: 25px;
         border-radius: 5px;
         cursor: pointer;
+        transition: all .2s linear;
+
+        &:hover {
+          background: #000;
+          border: 2px gray solid;
+          color: #fff;
+          border-radius: 20px 100px;
+        }
       }
     }
 
@@ -87,6 +96,7 @@ input {
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 100%;
 
       .withGoogle {
         display: flex;
@@ -96,11 +106,30 @@ input {
         color: black;
         border-radius: 5px;
         cursor: pointer;
+        transition: all .2s linear;
+
+        &:hover {
+          background: #000;
+          border: 2px gray solid;
+          color: #fff;
+          border-radius: 20px 100px;
+        }
       }
       .withGoogle img {
         width: 30px;
         height: 30px;
         margin-left: 5px;
+      }
+    }
+
+    .auth-window__create-account {
+      cursor: pointer;
+
+      p {
+
+        &:hover {
+          color: #3577EF;
+        }
       }
     }
   }
